@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Merchant Check Out Page</title>
+<meta name="GENERATOR" content="Evrsoft First Page">
+<style>
+        body {
+            background-color: #ECEFF1;
+            font-family: Helvetica;
+        }
+
+        .receipt {
+            width: 400px;
+            background-color: transparent;
+            margin: 80px auto 80px auto;
+        }
+
+        .table-receipt {
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: -20px 30px 50px 0px #8d8d8d;
+            background-color: white;
+        }
+
+        .th-header {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            background-color: #3a903e;
+            color: white;
+            padding: 24px;
+            font-size: 24px;
+        }
+
+        .td-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #78909c;
+            padding: 12px 8px 12px 8px;
+            border-bottom: 1px solid #CFD8DC;
+        }
+
+        .td-content {
+            font-size: 18px;
+            text-align: right;
+            padding: 12px 8px 12px 8px;
+            border-bottom: 1px solid #CFD8DC;
+        }
+
+        .td-bottom {
+            width: 100%;
+            font-weight: 600;
+            color: #3a903e;
+            text-align: center;
+            padding: 24px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <script type="text/javascript">
+          $(document).ready(function () {
+              $('#user-submit').click(function () {
+                  //var payload = $('#form1').serializeArray();
+                  alert('Are you sure to submit');
+                  });
+              });
+          });
+      </script>
+	<h1>Merchant Check Out Page</h1>
+	<pre>
+	</pre>
+	<form id="form1" method="post" action="#">
+		<table border="1">
+			<tbody>
+				<tr>
+					<td><label>ORDER_ID::*</label></td>
+					<td><input id="ORDER_ID" tabindex="1" maxlength="20" size="20"
+						name="ORDER_ID" autocomplete="off"
+						value="ALTX99990001">
+					</td>
+				</tr>
+				<tr>
+					<td><label>Item::*</label></td>
+					<td><input id="ORDER_ID" tabindex="1" maxlength="20" size="20"
+						name="ORDER_ID" autocomplete="off"
+						value="This RPI3">
+					</td>
+				</tr>
+				<tr>
+					<td><label>txnAmount*</label></td>
+					<td><input title="TXN_AMOUNT" tabindex="10"
+						type="text" name="TXN_AMOUNT"
+						value="1">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input value="CheckOut" type="submit" id ="user-submit"></td>
+				</tr>
+			</tbody>
+		</table>
+		* - Mandatory Fields
+	</form>
+</body>
+</html>
